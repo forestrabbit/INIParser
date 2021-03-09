@@ -169,7 +169,7 @@ public class INIParser {
             builder.append("[" + entry.getKey() + "]\n");
             for (var kv: entry.getValue()) {
                 for (var ca: kv.values) {
-                    builder.append(kv.key + " = " + ca + "\n");
+                    builder.append(kv.key + "=" + ca + "\n");
                 }
             }
         }
